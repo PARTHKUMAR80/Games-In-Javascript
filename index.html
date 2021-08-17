@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="main-box-1">
+        <div id="card">
+            <h1>The number is between 1 and 100</h1>
+            <h2>Can you guess it...!</h2>
+            <div class="display">
+                <input type="text" placeholder="Num" id="guess">
+            </div>
+            <button id="button" onclick="play()">Guess</button>
+            <p id="para-1">No. of guesses: 0</p>
+            <p id="para-2">Guessed numbers are: None</p>
+            <p id="para-3"></p>
+        </div>
+    </div>
+    <div class="selection-box">
+        <button class="selection" data-selection="rock">&#9994;</button>
+        <button class="selection" data-selection="paper">&#9995;</button>
+        <button class="selection" data-selection="scissors">&#9996;</button>
+    </div>
+    <div class="result">
+        <div>
+            You
+            <span class="result-score" data-your-score>0</span>
+        </div>
+        <div data-final-colomn>
+            Computer
+            <span class="result-score" data-computer-score>0</span>
+        </div>
+    </div>
+</body>
+</html>

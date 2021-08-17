@@ -1,0 +1,129 @@
+/* number guessing game */
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+}
+#main-box-1{
+    /* border: 2px solid red; */
+    /* border-radius: 2px; */
+    background: linear-gradient(
+        to right,
+        purple,
+        rgb(44, 44, 196)
+    );
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+}
+#card{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    padding: 40px 60px;
+}
+#card h1{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#card h2{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 7px;
+}
+.display{
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+.display input{
+    text-align: center;
+    height: 110px;
+    width: 130px;
+    font-size: 2rem;
+    border: 2px solid black;
+}
+#card button{
+    color: white;
+    background-color: purple;
+    border: 2px solid purple;
+    font-size: 2rem;
+    padding: 4px 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#para-1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#para-2{
+    font-size: 1.5rem;
+}
+#para-3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+#card button:hover{
+    border-color: black;
+    background: linear-gradient(
+        to right,
+        purple,
+        rgb(44, 44, 196)
+    );
+    color: white;
+    cursor: pointer;
+}
+
+/* rock paper scissors*/
+
+.selection-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: .8rem;
+    background: linear-gradient(
+        to right,
+        green,
+        purple,
+        crimson
+    );
+    /* border: 1px solid red; */
+}
+.selection{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5rem;
+    transition: 150ms;
+}
+.selection:hover{
+    transform: scale(1.2);
+}
+.result{
+    /* border: 1px solid black; */
+    display: grid;
+    justify-content: center;
+    margin-top: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.result-score{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(15, 0, 0);
+}
+.result-selection{
+    opacity: 0.5;
+}
+.result-selection.winner{
+    opacity: 1;
+    font-size: 4rem;
+}
